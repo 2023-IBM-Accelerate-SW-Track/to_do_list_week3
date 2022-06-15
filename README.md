@@ -60,7 +60,7 @@ At this point we have a working button that properly creates tasks with due date
 + Then check if todays date to the due date of the task. If the due date is in the past change then set `color` to a new color. (Play around and find a color that you like.) Note that your due date value is a string. You will have to use `new Date(/*due date variable*/)` to compare it to the current date (Hint: you can get the current date with `new Date()`)  
 + Next inside the card that you used to display the tasks set the `background` to `color`. (Hint: This is in  `<Card style={{\*Code*\}}>` from last week. If you did not add a style in the card add it now)
 + Add `data-testid={/*task-name*/}` inside the card as well. Where `task-name` is the variable that holds the task name
-+ Finally change the value of `secondary={/*Somevalue*/}` with your due date value.
++ Finally in ListItemText change the value of `secondary={/*Somevalue*/}` with your due date value.
 
 ## Testing
 + Here is an example of a unit test that adds a History Test task
