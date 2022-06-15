@@ -45,7 +45,7 @@ Right now the button works however we are able submit a task with an empty due d
 + We need to go to `Home.js` and go to the `addTodo` function where we made sure no duplicate tasks were added. (Hint: The date picker will give us three values: A valid date in string form, `"Invalid Date"` or `null`.) Create a check for `"Invalid Date"` or `null` so no task is made.
 +  Recall the psudeo code from week 2
 ```
-if (item exists in todo list) {
+if (null or "Invalid Date" in todo list) {
     do nothing and just return
     to break out the function
 } else {
