@@ -21,7 +21,8 @@ Instructions:
 import { DesktopDatePicker , LocalizationProvider} from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 ``` 
-+ Then you need to add this between the TextField that you used to input the task name and the add task button.
++ Next inside  `this.state = { //code here// }` in the constructor add a new variable to store the due date and set it to null (i.e. `due : null,`)
++ Then you need to add this between the TextField and the Button in the render function.
  ```   
 <LocalizationProvider dateAdapter={AdapterDateFns}>         
    <DesktopDatePicker
@@ -33,7 +34,6 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
     />
 </LocalizationProvider>
 ```
-+ Next inside  `state = { //code here// }` add a new variable to store the due date and set it to null (i.e. `due : null,`)
 + Replace `\*value*\` with the new state variable.
 + Create a handleChange function for the datepicker to set the value of your due date. (Hint: use handleChange as template) 
 + Note that the value from the the date picker will give more that just the date in mm/dd/yyyy. To format the date we need set the due date variable to `new Date(event).toLocaleDateString()`
