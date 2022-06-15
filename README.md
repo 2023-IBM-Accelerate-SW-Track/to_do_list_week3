@@ -42,7 +42,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 
 Right now the button works however we are able submit a task with an empty due date. We need to change this so that only task with both a task name and due date create a task. 
 
-+ We need to go to `Home.js` and go to the `addTodo` function where we made sure no duplicate tasks were added. (Hint: The date picker will give us three values: A valid date in string form, `"Invalid Date"` or `null`.) Create a check for `"Invalid Date"` or `null` so task is made.
++ We need to go to `Home.js` and go to the `addTodo` function where we made sure no duplicate tasks were added. (Hint: The date picker will give us three values: A valid date in string form, `"Invalid Date"` or `null`.) Create a check for `"Invalid Date"` or `null` so no task is made.
 +  Recall the psudeo code from week 2
 ```
 if (item exists in todo list) {
