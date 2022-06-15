@@ -53,10 +53,10 @@ if (null or "Invalid Date" in todo list) {
     the item to the Todo list }
 ```    
  
-At this point we have a working button that properly creates tasks with due dates however the due date value isn't being currently used.
+At this point we have a working button that properly creates tasks with due dates however the due date value isn't currently being used.
 
 + We want to display these due dates and highlight any overdue items. We can do this in `todos.js`
-+ Inside the map function make a variable called `color` and set it to `#ffffffff` or `white` (#ffffffff is white's hex color value)
++ Inside the map function make a variable called `color` and set it to `"#ffffffff"` or `"white"` (#ffffffff is white's hex color value)
 + Then compare todays date to the due date of the task. If the due date is in the past change `color` to a new color. (Play around and find a color that you like.) 
 + Note that your due date value is a string. You will have to use `new Date(/*due date variable*/)` to compare it to the current date (Hint: you can get the current date with `new Date()`)  
 + Next inside the card that you used to display the tasks set the background to `color`. (Hint: This is in  `<Card style={{\*Code*\}}>` from last week. If you did not add a style in the card add it now)
@@ -94,5 +94,6 @@ Complete the Following Test Cases in `AddTodo.test.js`
   + Submit Task with No Task Name
   + Late Tasks have Different Colors
   + Delete Task
+ To run these tests run `npm run test`
  ## Pre-session Material
 Here is a [**link**](https://) to the pre-session material that was provided to you earlier.
