@@ -36,8 +36,9 @@ Instructions:
     </LocalizationProvider>
     ```
     + Replace `\*value*\` with the new state variable.
-    + Create a new handleChange function for the datepicker to set the value of your due date. You are free to name this function. (Hint: use handleChange as a template. Don't forget to remove the content and date values. You won't need that here.) 
-        1. Note that the value from the the date picker will give more that just the date in mm/dd/yyyy. To format the date we need set the due date variable to `new Date(event).toLocaleDateString()`
+    + Create a new handleChange function for the datepicker to set the value of your due date. You are free to name this function. 
+        1. (Hint: use handleChange as a template. Don't forget to remove the content and date values. You won't need that here.) 
+        2. Note that the value from the the date picker will give more that just the date in mm/dd/yyyy. To format the date we need set the due date variable to `new Date(event).toLocaleDateString()`
     + Change `\*OnChange*\` to the new handle function that you created.
     + Finally reset the value of the duedate to null in the `onSubmit` function
 
