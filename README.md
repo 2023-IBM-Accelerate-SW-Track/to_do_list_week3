@@ -96,14 +96,14 @@ test('test that App component renders Task', () => {
 + Note: that the elements returned by `getByRole` or `getByText` may not have css or styling. If you want to have those values put a `data-testid` in that component and use `getByTestId` to grab those IDs.
 
 1. Complete the Following Test Cases in `src/AddTodo.test.js`
-  + No duplicate task
-  + Submit Task with No Due Date
-  + Submit Task with No Task Name
-  + Late Tasks have Different Colors
-    1. Hint if we wanted to grab the color of the card for "History Test" we can use `const historyCheck = screen.getByTestId(/History Test/i).style.background`
-  + Delete Task
-   1. Hint: Earlier we used `screen.getByRole` for getting a Button and a Text Box how would we get a Checkbox? Note: the name field isn't required.  
-
+    + No duplicate task
+    + Submit Task with No Due Date
+    + Submit Task with No Task Name
+    + Late Tasks have Different Colors
+        1. Hint if we wanted to grab the color of the card for "History Test" we can use `const historyCheck = screen.getByTestId(/History Test/i).style.background`
+    + Delete Task
+        1. Hint: Earlier we used `screen.getByRole` for getting a Button and a Text Box how would we get a Checkbox? 
+ 
  To run these tests run `npm run test`
  ## Pre-session Material
 Here is a [**link**](https://) to the pre-session material that was provided to you earlier.
