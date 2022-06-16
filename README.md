@@ -92,7 +92,9 @@ Complete the Following Test Cases in `AddTodo.test.js`
   + Submit Task with No Due Date
   + Submit Task with No Task Name
   + Late Tasks have Different Colors
+   + Hint if we wanted to grab the color of the card for "History Test" we can use `const historyCheck = screen.getByTestId(/History Test/i).style.background`
   + Delete Task
+   + Hint: Earlier we used `screen.getByRole` for getting a Button and a Text Box how would we get a Checkbox? Note: the name field isn't required.  
 
  To run these tests run `npm run test`
  ## Pre-session Material
