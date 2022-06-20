@@ -60,7 +60,7 @@ Instructions:
     + We want to display these due dates and highlight any overdue items. We can do this in `src/component/todos.js`
     + Inside the map function above the return function make a variable called `color` and set it to `"#ffffffff"` or `"white"` (#ffffffff is white's hex color value)
     + Then check if todays date to the due date of the task. If the due date is in the past change then set `color` to a different color. 
-        1. (You do not have to keep the original card white, however you MUST make overdue cards a differnt color. Play around and find colors that you like.) 
+        1. (You do not have to keep the original card white, however you MUST make overdue cards a different color. Play around and find colors that you like.) 
         2. Note that your due date value is a string. You will have to use `new Date(/*due date variable*/)` to compare it to the current date 
         3. (Hint: you can get the current date with `new Date()`)  
     + Next inside the card that you used to display the tasks set the `background` to `color`. 
@@ -92,10 +92,11 @@ test('test that App component renders Task', () => {
 + `screen.getByRole('textbox', {name: /Add New Item/i})`  Looks for a textbox compentent with the words "Add New Item"
 + `fireEvent.change(inputTask, { target: { value: "History Test"}})` Types the value "History Test" into the text box.
 + `fireEvent.click()` clicks the selected element.
-+ `screen.getByText(/History Test/i)` searches for "History Test" on the screen ignoring case using regex. 
-+ `expect(check).toBeInTheDocument();` the element should be in the page if it is the test case is passed. Otherwise the test fails.
++ `screen.getByText(/History Test/i)` searches for "History Test" on the screen ignoring case using regex. (Note: getBy only looks for one value. If more than one value or no value is present then an error will occur.  If you want to get more then use `getAllBy`). 
++ `expect(check).toBeInTheDocument();` the element should be in the page if it is the test case is passed. Otherwise the test fails. 
++ If you want to check if a value is equal to something you can use `expect(value).toBe(value_I_want)`.
 + Note: that the elements returned by `getByRole` or `getByText` may not have css or styling. If you want to have those values put a `data-testid` in that component and use `getByTestId` to grab those IDs.
-
++ If we want to check if a value is 
 1. Complete the Following Test Cases in `src/AddTodo.test.js`
     + No duplicate task
     + Submit Task with No Due Date
