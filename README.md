@@ -108,4 +108,4 @@ test('test that App component renders Task', () => {
  
  To run these tests run `npm run test`
  ## Pre-session Material
-Here is a [**link**](https://) to the pre-session material that was provided to you earlier.
+Here is a [**link**](https://ibm.ent.box.com/file/973625215131) to the pre-session material that was provided to you earlier.
