@@ -1,6 +1,6 @@
 # Project Week 3 To-do list application (Cont.)
 ## Introduction
-As of now, you have completed Project Week 2 and should now have a React Application Todo List Application that can add and delete unique tasks. For Project Week 3 we will finish up the frontend and make our own unit tests to make sure out App is working properly  We encourage you to take a unique approach to this lab as there is no one right answer. 
+As of now, you have completed Project Week 2 and should now have a React Todo List Application that can add and delete unique tasks. For Project Week 3 we will finish up the frontend and make our own unit tests to make sure out App is working properly  We encourage you to take a unique approach to this lab as there is no one right answer. 
 - [Material Design](https://material.io/design/introduction) is a design system that can guide you on what UI decisions to make if you would like to explore best practices, but functionality is the key focus of the lab.
 - No back-end is required for this lab, all data (tasks) should live in the front-end.
 
@@ -16,13 +16,13 @@ Implementation requirements:
 + Use [**React Testing Library**](https://testing-library.com/docs/react-testing-library/cheatsheet) to create unit tests to test your code.
 
 Instructions:
-1. To start this project we need to add a component that allows us to select a duedate for our tasks.
+1. To start this project we need to add a component that allows us to select a due date for our tasks.
     + To add the Date Picker add these imports to `src/component/AddTodo.js` 
     ```
     import { DesktopDatePicker , LocalizationProvider} from '@mui/x-date-pickers';
     import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
     ``` 
-    + Next inside  `this.state = { //code here// }` in the constructor add a new variable to store the due date and set it to null (i.e. `due : null,`)
+    + Next inside the constructor when initializing `this.state` add a new variable to store the due date and set it to null (i.e. `due : null,`)
     + Then you need to add this between the TextField and the Button in the render function.
      ```   
     <LocalizationProvider dateAdapter={AdapterDateFns}>         
@@ -40,7 +40,7 @@ Instructions:
         1. (Hint: use handleChange as a template. Don't forget to remove the content and date values. You won't need that here.) 
         2. Note that the value from the the date picker will give more that just the date in mm/dd/yyyy. To format the date we need set the due date variable to `new Date(event).toLocaleDateString()`
     + Change `\*OnChange*\` to the new handle function that you created.
-    + Finally reset the value of the duedate to null in the `onSubmit` function
+    + Finally reset the value of the due date to null in the `onSubmit` function
 
 2. Right now the button works however we are able submit a task with an empty due date. We need to change this so that only task with both a task name and due date create a task. 
 
@@ -108,4 +108,4 @@ test('test that App component renders Task', () => {
  
  To run these tests run `npm run test`
  ## Pre-session Material
-Here is a [**link**](https://ibm.ent.box.com/file/973625215131) to the pre-session material that was provided to you earlier.
+Here is a [**link**](https://ibm.ent.box.com/v/Software-recordings/folder/211327862148) to the pre-session material that was provided to you earlier.
